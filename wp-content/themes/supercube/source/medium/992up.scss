@@ -1,0 +1,218 @@
+.hidden-lg-up {
+  display: none;
+}
+// css block how to
+
+#button-service {
+  .bottom_service_ft {
+    a {
+      padding: 60px 0px;
+      display: inline-block;
+      color: white;
+      line-height: 1;
+      width: 100%;
+      font-weight: 600;
+      font-size: 36px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Barlow Condensed", sans-serif;
+    }
+  }
+}
+.background_image_carausel {
+  height: 920px;
+}
+
+#banner_top {
+  h1.title_room {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 200px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+}
+body {
+  font-size: 18px;
+}
+.banner.banner-page {
+  height: 360px;
+}
+.sup-title h3 {
+  font-size: 20px;
+  padding-bottom: 85px;
+  padding-top: 85px;
+  margin-bottom: 0px;
+  line-height: 24px;
+  font-weight: 600;
+}
+#banner_top {
+  .row {
+    h1.title {
+      font-size: 40px;
+      margin-top: 270px;
+    }
+  }
+}
+//css block
+.block_how_to {
+  h4.title_block_hw {
+    font-size: 70px;
+  }
+}
+.banner-page-super {
+  height: 640px;
+}
+#banner_top .row h1.title {
+  font-size: 100px;
+  margin-top: 400px;
+}
+.dropdown-toggle:after {
+  content: none;
+}
+.wrapper_content {
+  font-size: 50px;
+  font-family: "Barlow Condensed", sans-serif;
+  article {
+    font-size: 1rem;
+  }
+}
+ul.navbar-nav {
+  li {
+    ul.sub-menu {
+      li.nav-item {
+        a {
+          padding: 2px 20px;
+        }
+      }
+    }
+  }
+}
+.form_book {
+  h2 {
+    font-size: 70px;
+  }
+}
+.title-venues {
+  font-size: 50px;
+}
+#form_section {
+  .container {
+    .row {
+      .main {
+        padding-right: 34%;
+        padding-left: 34%;
+        color: white;
+        font-weight: 400;
+        p {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}
+.content_image {
+  h3 {
+    font-size: 50px;
+    margin-bottom: 35px;
+  }
+}
+.height_map {
+  height: 650px;
+}
+.content_room_block {
+  h4 {
+    font-size: 50px;
+  }
+}
+#content_price {
+  padding: 37px 17%;
+}
+#container_form.main {
+  padding-right: 17%;
+  padding-left: 17%;
+}
+#testimonial .feature-box-2 {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+#home_page {
+  .col-12 {
+    padding: 0px;
+    #testimonial {
+      height: 520px;
+    }
+    h2.title {
+      color: white;
+      font-size: 50px;
+      font-weight: 600;
+    }
+    &.main {
+      margin-top: 80px;
+      margin-bottom: 80px;
+      padding: 0 17%;
+      a.btn_welc_block {
+        min-width: 200px;
+        border-radius: 0 !important;
+        margin: 10px 15px;
+      }
+    }
+  }
+}
+
+//css slide home
+
+#carousel_slide_home {
+  height: auto;
+  ul.carousel-indicators {
+    li {
+      height: 12px;
+      width: 12px;
+      color: #cdcdcd;
+      border-radius: 50%;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .carousel-inner {
+    height: inherit;
+    .carousel-item {
+      img {
+        width: 100%;
+        height: 940px;
+        overflow: hidden;
+      }
+      .container {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        color: white !important;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        h2 {
+          font-size: 100px;
+          text-align: center;
+          margin-top: 200px;
+          visibility: visible!important;
+          animation-name: fadeInDown!important;
+        }
+        p,
+        article {
+          text-align: center;
+          animation-duration: 1s;
+          margin-bottom: 25px;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}

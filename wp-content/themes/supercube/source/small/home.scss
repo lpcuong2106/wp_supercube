@@ -1,0 +1,146 @@
+#nav_header_menu {
+  .row {
+    .col-1,
+    .col-11 {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+  }
+}
+// .logo-footer-hide{
+// 	padding-left:15px!important;
+// }
+
+// css block footer
+.widget_footer {
+  .row {
+    padding-left: 0px !important;
+    .col-md-3 {
+      max-width: 100% !important;
+      flex: 0 0 100% !important;
+      padding-bottom: 5px !important;
+      // padding-left: 15px!important;
+    }
+   
+  }
+}
+.background_image_carausel {
+  height: 400px !important;
+
+  .container {
+    background: rgba(0, 0, 0, 0.5);
+
+    width: 520px;
+    padding: 35px 45px;
+
+    .wrapper_content {
+      background-color: unset !important;
+      width: 100%;
+      padding: 25px 10px;
+      article {
+        font-size: 12px;
+      }
+    }
+  }
+}
+#banner_top .row h1.title_room {
+  font-size: 32px !important;
+  padding-top: 30px !important;
+  padding-bottom: 40px !important;
+  margin-top: 120px !important;
+}
+.banner.banner-page {
+  height: 230px !important;
+}
+body {
+  font-size: 13px;
+}
+.content_image {
+  h3 {
+    font-size: 30px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+h2.text_form {
+  font-size: 32px;
+  text-align: left !important;
+}
+.form_book {
+  .form-row {
+    input,
+    button,
+    select,
+    optgroup,
+    textarea {
+      font-size: inherit;
+    }
+  }
+}
+.title-venues {
+  font-size: 32px !important;
+}
+.height_map {
+  height: 400px !important;
+}
+.content_room_block {
+  h4 {
+    font-size: 32px !important;
+  }
+}
+.block_song_info .info_song {
+  font-size: 32px !important;
+}
+.page_category {
+  .row .main {
+    h2 {
+      font-size: 32px !important;
+    }
+  }
+}
+.block_how_to .main {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.category_page h2 {
+  font-size: 32px !important;
+}
+#content_price {
+  padding: 5px 15px !important;
+}
+.select_button {
+  select#room-select {
+    width: 70% !important;
+    font-size: 14px !important;
+  }
+}
+.btn-price {
+  font-size: 14px !important;
+  padding: 7px 20px !important;
+  height: 39px !important;
+}
+#home_page .col-12 div#testimonial.p-0 {
+  padding: 80px 15px !important;
+}
+#carousel_slide_home {
+  .carousel-inner {
+    .carousel-item {
+      img {
+        height: 86vh !important;
+      }
+    }
+  }
+}
+#carousel_slide_home.custome_slide .carousel-inner .carousel-item {
+  .container{
+    padding: 0;
+  }
+  .slider-caption 
+  {
+    height:100%;
+    .items-slider{
+      width: 100%;
+      height: 100%;
+      }
+  }
+}

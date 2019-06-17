@@ -1,0 +1,13 @@
+form{
+    #box-prices{
+        .select_button{
+          select#room-select{
+            width: 100%!important;
+            margin-bottom:10px;
+          }
+        }
+      }
+}
+.select_button {
+    text-align: center;
+}

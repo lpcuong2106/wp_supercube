@@ -1,0 +1,121 @@
+#header_language {
+  justify-content: center;
+}
+#button-service {
+  .bottom_service_ft {
+    a {
+      padding: 60px 14px;
+      display: inline-block;
+      color: white;
+      line-height: 1;
+      width: 100%;
+      font-size: 36px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Barlow Condensed", sans-serif;
+    }
+  }
+}
+#footer {
+  .container {
+    .row {
+      padding-left: 15px;
+    }
+  }
+}
+.scrollToTop {
+  width: 40px !important;
+  height: 40px !important;
+}
+#banner_top {
+  .row {
+    h1.title {
+      font-size: 40px !important;
+    }
+  }
+}
+
+//css block
+.block_how_to {
+  .main {
+    padding: 50px 20px !important;
+  }
+  h4.title_block_hw {
+    font-size: 32px !important;
+  }
+  article {
+    font-size: 13px !important;
+  }
+}
+// @mixin button_carausel($position: "left") {
+//   position: absolute;
+//   @if ($position == "right") {
+//     right: 26px !important;
+//   } @else {
+//     left: 0;
+//   }
+
+//   bottom: 75px !important;
+//   top: unset !important;
+//   font-size: 24px !important;
+//   &::after {
+//     background: #009ee2;
+//     @if ($position == "right") {
+//       content: "\f105";
+//     } @else {
+//       content: "\f104";
+//     }
+
+//     font-family: "Font Awesome 5 Free";
+//     display: inline-block;
+//     color: white;
+//     margin: 0 !important;
+//     font-weight: 600;
+//     padding: 5px 17px;
+//     transition: all 0.2s ease-in-out;
+//   }
+// }
+// .owl-prev .carousel-control-prev-icon {
+//   @include button_carausel("left");
+// }
+// .carousel-control-next-icon {
+//   @include button_carausel("right");
+// }
+.fixedTop{
+  #nav_header_menu{
+    a{
+      img#img_logo{
+        margin: 10px 0!important;
+      }
+    }
+  }
+  
+  
+  nav.navbar.sticky-top{
+    margin-top: 0px!important;
+   
+  }
+}
+.form_book{
+  padding: 0 15px;
+ 
+}
+.text_form{
+  font-size: 70px;
+ }
+ .btn-price{
+   margin-left: 11px!important;
+ }
+ .select_button{
+  select#room-select{
+    width: 64%;
+  }
+}
+.carousel-control-prev {
+  top: unset;
+  bottom: 0;
+}
+.carousel-control-next {
+  top: unset;
+  bottom: 0;
+}

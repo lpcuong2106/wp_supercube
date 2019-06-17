@@ -1,0 +1,10 @@
+@import "./medium/general.scss";
+@media (max-width: 991px) {
+  @import "./medium/992px";
+}
+@media (min-width: 992px) {
+  @import "./medium/992up";
+}
+@media (min-width: 768px) {
+  @import "./medium/768up.scss";
+}

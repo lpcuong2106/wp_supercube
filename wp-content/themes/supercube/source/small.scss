@@ -1,0 +1,9 @@
+@media (max-width: 575px) {
+	@import "./small/home";
+}
+@media (max-width: 767px){
+	@import "./small/mobiphone";
+}
+@media (max-width: 375px){
+	@import "./small/small_mophone_320";
+}

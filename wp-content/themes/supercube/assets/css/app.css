@@ -1968,6 +1968,10 @@ p {
   .title_404 {
     font-size: 60px !important;
   }
+
+  .btn_load_more {
+    width: 150px !important;
+  }
 }
 
 @media (min-width: 992px) {

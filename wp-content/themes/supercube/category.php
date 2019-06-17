@@ -44,7 +44,7 @@ if ($my_posts->have_posts()) {
 
             <?php endwhile;  ?>
             <?php if ($my_posts->max_num_pages > 1)
-            echo '<button id="loadmore" class="btn btn-md btn_load_more">More posts</button>';
+            echo ' <div class="col-12 main text-center"><a id="loadmore" class="hvr-shutter-out-horizontal f-t-b btn btn-md btn_load_more">LOAD MORE </a></div>';
             ?>
         </div>
         
@@ -81,7 +81,7 @@ wp_reset_postdata(); ?>
             },
             success: function(data) {
                 if (data) {
-                    button.text('More posts').prev().after(data); // insert new posts
+                    button.text('More posts').parent().before(data); // insert new posts
                     current_page++;
 
                     if (current_page == max_page) {

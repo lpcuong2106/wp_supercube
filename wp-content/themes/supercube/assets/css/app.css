@@ -1619,6 +1619,20 @@ p {
   color: white !important;
 }
 
+.btn_load_more {
+  width: 340px;
+  background: #009EE2;
+  border-radius: 0;
+  padding: 10px 25px;
+  font-size: 18px;
+  color: #ffffff !important;
+  margin: 10px 0px;
+}
+
+.btn_load_more:hover {
+  color: #009EE2 !important;
+}
+
 @media (max-width: 991px) {
   #img_logo {
     width: 50px !important;

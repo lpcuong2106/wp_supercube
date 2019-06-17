@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /training/supercube/
+RewriteBase /training/supercube_traing_1/supercube_proj_1
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /training/supercube/index.php [L]
+RewriteRule . /training/supercube_traing_1/supercube_proj_1/index.php [L]
 </IfModule>
 
 # END WordPress

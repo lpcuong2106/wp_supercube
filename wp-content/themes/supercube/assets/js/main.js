@@ -357,9 +357,9 @@ jQuery(document).ready(function ($) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\training\supercube\wp-content\themes\supercube\js\main.js */"./js/main.js");
-__webpack_require__(/*! C:\xampp\htdocs\training\supercube\wp-content\themes\supercube\js\test.js */"./js/test.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\training\supercube\wp-content\themes\supercube\source\app.scss */"./source/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\training\supercube_traing_1\supercube_proj_1\wp-content\themes\supercube\js\main.js */"./js/main.js");
+__webpack_require__(/*! C:\xampp\htdocs\training\supercube_traing_1\supercube_proj_1\wp-content\themes\supercube\js\test.js */"./js/test.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\training\supercube_traing_1\supercube_proj_1\wp-content\themes\supercube\source\app.scss */"./source/app.scss");
 
 
 /***/ })

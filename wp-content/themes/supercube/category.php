@@ -43,11 +43,11 @@ if ($my_posts->have_posts()) {
                 </div>
 
             <?php endwhile;  ?>
-
+            <?php if ($my_posts->max_num_pages > 1)
+            echo '<button id="loadmore" class="btn btn-md btn_load_more">More posts</button>';
+            ?>
         </div>
-        <?php if ($my_posts->max_num_pages > 1)
-            echo '<button id="loadmore">More posts</button>';
-        ?>
+        
 
     </section>
 

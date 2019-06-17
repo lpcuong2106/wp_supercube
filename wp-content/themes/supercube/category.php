@@ -63,6 +63,7 @@ wp_reset_postdata(); ?>
                         } else {
                             echo 1;
                         } ?>;
+                        console.log(current_page);
     $('#loadmore').click(function() {
         var ajaxurl = "<?= admin_url('admin-ajax.php') ?>";
         var max_page = <?= $my_posts->max_num_pages ?>;

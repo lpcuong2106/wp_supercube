@@ -185,9 +185,9 @@ function misha_loadmore_ajax_handler(){
     $args =array(
         'post_type' => 'post',
         'post_status'   => 'publish',
-        'posts_per_page' => '1',
+        'posts_per_page' => '2',
         'cat'           => $_POST['query']['cat'],
-        'paged'         => $_POST['page'] + 2,
+        'paged'         => $_POST['page'],
     );
 
     $one_post = new Wp_Query($args);

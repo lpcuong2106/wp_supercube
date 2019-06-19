@@ -44,6 +44,7 @@ body.preloader-site{
 nav.navbar {
   margin-top: 73px;
   padding-right: 0px;
+  transition: all 0.2s ease;
   padding-left: 68px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -134,6 +135,7 @@ nav.navbar {
 #nav_header_menu {
   background: transparent;
   .row {
+    transition: all 0.2s ease;
     border-bottom: 2px solid #007ab5;
   }
 }
@@ -211,7 +213,7 @@ ul#social-link_footer {
   li {
     font-size: 16px;
     a {
-      color: #007ab5;
+      color: #009EE2 ;
       font-weight: 400px;
     }
     &:hover {
@@ -371,17 +373,22 @@ ul#main_footer {
         font-weight: 400;
         p {
           margin-bottom: 0px;
+          &:last-child a{
+            color: #009EE2!important;
+          }
+          &:last-child:hover a{
+            color: white !important;
+          }
         }
         a {
           color: white;
           transition: all 0.2s ease-in-out;
+          
           &:hover {
             text-decoration: none;
-            color: #0c9ec7;
+            color: #0c9ec7!important;
           }
-          &:last-child:hover {
-            color: white !important;
-          }
+         
         }
       }
     }
@@ -797,7 +804,7 @@ ul#main_menu li.current-menu-parent{
 }
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  color: #000000;
+  // color: #000000;
   font-weight: 600;
 }
 .page_category{
@@ -1185,9 +1192,13 @@ p {
   height: 45px;
   background: #009ee2;
   transition: all 0.2s ease-in-out;
+  transition: display 0.05s ease-in-out;
   margin: auto;
   &:hover{
     opacity: 1;
+    .carousel-control-prev-icon,.carousel-control-next-icon{
+      display: hidden;
+    }
   }
   .carousel-control-prev-icon,.carousel-control-next-icon{
     background-image: none;
@@ -1208,6 +1219,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    &.hvr-sweep-to-left:before{
+      background: #009ee2;
+    }
   }
   &:hover .carousel-control-text{
     opacity:1;
@@ -1234,6 +1248,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    &.hvr-sweep-to-right:before{
+      background: #009ee2;
+    }
   }
   &:hover .carousel-control-text{
     opacity:1;
@@ -1282,4 +1299,16 @@ p {
   &:hover{
     color: #009EE2!important;
   }
+}
+#social-link_footer{
+  li{
+    a{
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+h4.widget_title{
+  color: #ffffff!important;
+  font-weight: 600;
+  font-size: 16px;
 }

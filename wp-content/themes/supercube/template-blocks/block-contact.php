@@ -30,7 +30,7 @@ $address = get_field('address');
         </article>
         <?php if(have_rows('button')){
                 while(have_rows('button')): the_row(); ?>
-                    <a href="<?= the_sub_field('href') ?>" class="btn btn-md btn_blue hvr-shutter-out-horizontal"><?= the_sub_field('text') ?></a>
+                    <a href="<?php the_sub_field('href') ?>" class="btn btn-md btn_blue hvr-shutter-out-horizontal"><?php the_sub_field('text') ?></a>
               <?php   endwhile ?>
         <?php } ?>
         <article class="article_contact">

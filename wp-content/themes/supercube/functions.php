@@ -25,7 +25,7 @@ if (!function_exists('setup_stylesheet_theme')) {
 
         wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Barlow+Condensed|Raleway&display=swap', array(), null);
 
-        wp_enqueue_style('hover', get_template_directory_uri() . '/css/hover.css', array(), null);
+        wp_enqueue_style('hover', "https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css", array(), null);
 
         wp_enqueue_style('awesome', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css', array(), null);
         wp_enqueue_style('animates', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css', array(), null);
@@ -222,3 +222,12 @@ function misha_loadmore_ajax_handler(){
  
 add_action('wp_ajax_loadmore', 'misha_loadmore_ajax_handler'); // wp_ajax_{action}
 add_action('wp_ajax_nopriv_loadmore', 'misha_loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
+
+function handle_bacground_header(){
+    if (!empty(get_field('background-image'))) {
+        $image = get_field('background-image');
+        echo "background:url('" . $image . "') no-repeat center center fixed; background-size: cover;";
+    } else {
+        echo 'background: linear-gradient(#003651, #004a6f, #00689c);';
+    }
+}

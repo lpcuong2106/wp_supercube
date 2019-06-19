@@ -276,6 +276,7 @@ body.preloader-site {
 nav.navbar {
   margin-top: 73px;
   padding-right: 0px;
+  transition: all 0.2s ease;
   padding-left: 68px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -371,6 +372,7 @@ nav.navbar ul#social-link li:hover a {
 }
 
 #nav_header_menu .row {
+  transition: all 0.2s ease;
   border-bottom: 2px solid #007ab5;
 }
 
@@ -449,7 +451,7 @@ ul#social-link_footer li {
 }
 
 ul#social-link_footer li a {
-  color: #007ab5;
+  color: #009EE2;
   font-weight: 400px;
 }
 
@@ -618,6 +620,14 @@ ul#main_footer li:hover a {
   margin-bottom: 0px;
 }
 
+.widget_footer .row .col-md-3 li p:last-child a {
+  color: #009EE2 !important;
+}
+
+.widget_footer .row .col-md-3 li p:last-child:hover a {
+  color: white !important;
+}
+
 .widget_footer .row .col-md-3 li a {
   color: white;
   transition: all 0.2s ease-in-out;
@@ -625,11 +635,7 @@ ul#main_footer li:hover a {
 
 .widget_footer .row .col-md-3 li a:hover {
   text-decoration: none;
-  color: #0c9ec7;
-}
-
-.widget_footer .row .col-md-3 li a:last-child:hover {
-  color: white !important;
+  color: #0c9ec7 !important;
 }
 
 .f-t-b {
@@ -1092,7 +1098,6 @@ h4,
 h5,
 h6 {
   line-height: 1;
-  color: #000000;
   font-weight: 600;
 }
 
@@ -1520,12 +1525,20 @@ p {
   height: 45px;
   background: #009ee2;
   transition: all 0.2s ease-in-out;
+  transition: display 0.05s ease-in-out;
   margin: auto;
 }
 
 .carousel-control-next:hover,
 .carousel-control-prev:hover {
   opacity: 1;
+}
+
+.carousel-control-next:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon,
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-prev:hover .carousel-control-next-icon {
+  display: hidden;
 }
 
 .carousel-control-next .carousel-control-prev-icon,
@@ -1550,6 +1563,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.carousel-control-next .carousel-control-text.hvr-sweep-to-left:before {
+  background: #009ee2;
 }
 
 .carousel-control-next:hover .carousel-control-text {
@@ -1579,6 +1596,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.carousel-control-prev .carousel-control-text.hvr-sweep-to-right:before {
+  background: #009ee2;
 }
 
 .carousel-control-prev:hover .carousel-control-text {
@@ -1631,6 +1652,16 @@ p {
 
 .btn_load_more:hover {
   color: #009EE2 !important;
+}
+
+#social-link_footer li a {
+  transition: all 0.2s ease-in-out;
+}
+
+h4.widget_title {
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 @media (max-width: 991px) {

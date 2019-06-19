@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="banner banner-page" style="background: linear-gradient(#003651, #004a6f, #00689c); ">
+<div class="banner banner-page" style="<?php handle_bacground_header() ?>">
     <div class="container" id="banner_top">
         <div class="row">
             <h1 class="title_room"><?php single_cat_title("", true); ?></h1>
@@ -44,13 +44,10 @@ if ($my_posts->have_posts()) {
 
             <?php endwhile;  ?>
             <?php if ($my_posts->max_num_pages > 1)
-            echo ' <div class="col-12 main text-center"><a id="loadmore" class="hvr-shutter-out-horizontal f-t-b btn btn-md btn_load_more">LOAD MORE </a></div>';
+                echo ' <div class="col-12 main text-center"><a id="loadmore" class="hvr-shutter-out-horizontal f-t-b btn btn-md btn_load_more">LOAD MORE </a></div>';
             ?>
         </div>
-        
-
     </section>
-
     </div>
 
 <?php }
@@ -63,7 +60,6 @@ wp_reset_postdata(); ?>
                         } else {
                             echo 1;
                         } ?>;
-                        console.log(current_page);
     $('#loadmore').click(function() {
         var ajaxurl = "<?= admin_url('admin-ajax.php') ?>";
         var max_page = <?= $my_posts->max_num_pages ?>;

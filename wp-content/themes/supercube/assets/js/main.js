@@ -183,7 +183,7 @@ jQuery(function ($) {
 
       $.ajax({
         type: "GET",
-        url: "http://localhost/training/supercube/wp-json/wp/v2/posts/" + ValSelectForm,
+        url: "/wp-json/wp/v2/posts/" + ValSelectForm,
         success: function success(data) {
           UIctr().showUI(data);
         },

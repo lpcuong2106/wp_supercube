@@ -52,10 +52,12 @@ nav.navbar {
   ul.navbar-nav {
     li {
       &:hover {
+        
         &:hover ul.sub-menu {
           display: block;
         }
         a.nav-link {
+          
           color: #007ab5;
         }
       }
@@ -69,6 +71,7 @@ nav.navbar {
       text-transform: uppercase;
       position: relative;
       a.nav-link {
+        cursor: pointer;
         transition: color 0.2s ease-in-out; 
         font-family: "Barlow Condensed", sans-serif;
         color: white;
@@ -589,6 +592,7 @@ ul#main_footer {
       ul#main_menu{
         li{
           a{
+           
             padding: 20px 25px 20px;
           }
           ul.sub-menu{
@@ -1211,6 +1215,7 @@ p {
 .carousel-control-next {
   right: 2px;
   .carousel-control-text{
+    transition: all 0.2s ease-in-out;
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -1240,6 +1245,7 @@ p {
 .carousel-control-prev {
   left: 2px;
   .carousel-control-text{
+    transition: all 0.2s ease-in-out;
     position: absolute;
     top: 0px;
     bottom: 0px;

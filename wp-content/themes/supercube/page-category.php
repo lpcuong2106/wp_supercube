@@ -9,7 +9,7 @@
 
 while (have_posts()) : the_post(); ?>
 
-    <div class="banner banner-page" style="<?php get_template_part('handle', 'bghead'); ?>">
+    <div class="banner banner-page" style="<?php handle_bacground_header() ?>">
         <div class="container" id="banner_top">
             <div class="row">
                 <h1 class="title_room"><?php the_title() ?></h1>

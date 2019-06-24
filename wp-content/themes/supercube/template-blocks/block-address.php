@@ -19,6 +19,6 @@ $address = get_field('iframe');
 
 ?>
 <div class="col-xl-6 col-lg-12 text-center height_map" style="margin: 0;padding:0;">
-<?php var_dump($address); ?>
+<?= $address; ?>
 </div>
 

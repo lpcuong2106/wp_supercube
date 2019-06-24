@@ -302,6 +302,7 @@ nav.navbar ul.navbar-nav li.active a {
 }
 
 nav.navbar ul.navbar-nav li a.nav-link {
+  cursor: pointer;
   transition: color 0.2s ease-in-out;
   font-family: "Barlow Condensed", sans-serif;
   color: white;
@@ -1555,6 +1556,7 @@ p {
 }
 
 .carousel-control-next .carousel-control-text {
+  transition: all 0.2s ease-in-out;
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1588,6 +1590,7 @@ p {
 }
 
 .carousel-control-prev .carousel-control-text {
+  transition: all 0.2s ease-in-out;
   position: absolute;
   top: 0px;
   bottom: 0px;

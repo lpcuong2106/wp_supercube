@@ -191,13 +191,13 @@ function misha_loadmore_ajax_handler(){
     );
 
     $one_post = new Wp_Query($args);
- 
 	if( $one_post->have_posts() ) :
 
-	while($one_post->have_posts() ): $one_post->the_post(); ?>
+    while($one_post->have_posts() ): $one_post->the_post();?>
+
              <div class="main col-12 text-center category_page">
                 <h2 class=" text-uppercase  m-t-15">
-                    <a class="f-t-b"href="<?php the_permalink() ?>" title="Read more"><?php the_title() ?></a>
+                    <a class="f-t-b"href="<?php the_permalink(); ?>" title="Read more"><?php the_title() ?></a>
                 </h2>
                 <span class="date_time"><?php the_time("l dS F Y"); ?></span>
                 <article>

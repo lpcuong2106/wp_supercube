@@ -29,8 +29,8 @@ $address = get_field('address');
             <?= $content ?>
         </article>
         <?php if(have_rows('button')){
-                while(have_rows('button')): the_row(); ?>
-                    <a href="<?php the_sub_field('href') ?>" class="btn btn-md btn_blue hvr-shutter-out-horizontal"><?php the_sub_field('text') ?></a>
+                while(have_rows('button')): the_row();$link = get_sub_field('href'); ?>
+                    <a href="<?= $link['url']; ?>" target="<?= $link['target'] ?>" class="btn btn-md btn_blue hvr-shutter-out-horizontal"><?php the_sub_field('text') ?></a>
               <?php   endwhile ?>
         <?php } ?>
         <article class="article_contact">

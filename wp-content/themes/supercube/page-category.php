@@ -29,7 +29,7 @@ while (have_posts()) : the_post(); ?>
 
     </section>
 
-    <?php get_template_part('handle', 'btnTarget');
+    <?php get_template_part('handle', 'slipcol');
 endwhile; // End of the loop.
 ?>
 </div>

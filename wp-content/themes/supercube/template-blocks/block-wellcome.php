@@ -34,9 +34,9 @@ $button = get_field('button_option');
         <?php } ?>
         <?php if (have_rows('button_option')) {
             $id= 0;
-            while (have_rows('button_option')) : the_row(); ?>
+            while (have_rows('button_option')) : the_row(); $link = get_sub_field('link'); ?>
              
-                <a href="<?php the_sub_field('link') ?>" class="btn-wel-<?= $id ?> text-center hvr-shutter-out-horizontal f-t-b btn btn-lg btn_welc_block"
+                <a href="<?= $link['url'] ?>" target="<?= $link['target'] ?>" class="btn-wel-<?= $id ?> text-center hvr-shutter-out-horizontal f-t-b btn btn-lg btn_welc_block"
                    style="background: <?php the_sub_field('background') ?>; color:<?php the_sub_field('color_text') ?>"><?php the_sub_field('text_button') ?></a>
               <style>
                   .btn-wel-<?= $id ?>:hover{

@@ -22,7 +22,8 @@ $content = get_field('content');
 $colorText = get_field('color');
 
 ?>
-<div class="col-lg-6 content-rooms-venues d-flex align-items-center text-center justify-content-center" style="<?php if($style== 'background-color'){echo "background-color:$bg_color" ; }else{echo "background-image: url(".$bg_image['url']. ")" ;} ;?>">
+<div class="col-lg-6 content-rooms-venues d-flex align-items-center text-center justify-content-center" style="<?php if($style== 'background-color'){echo "background-color:$bg_color" ; }else{echo "background-image: url(".$bg_image['url']. "); background-position: center center;
+    background-size: cover;" ;} ;?>">
     <div class="content_room_block pt-2" style="color: <?= $colorText ?>">
         <h4 class="f-t-b " style="color: <?= $colorText ?>"><?= $title; ?></h4>
         <article class="pt-2"> 

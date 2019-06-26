@@ -179,7 +179,12 @@ function new_excerpt_more($excerpt)
 }
 add_filter('get_the_excerpt', 'new_excerpt_more');
 
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'AIzaSyA-XfYRxiVC68I7Di0Vn1mgzVye_sy86D8');
+}
 
+add_action('acf/init', 'my_acf_init');
 
 function misha_loadmore_ajax_handler(){
     $args =array(

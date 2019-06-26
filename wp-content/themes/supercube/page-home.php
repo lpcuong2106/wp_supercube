@@ -37,9 +37,12 @@ while (have_posts()) : the_post();
                                 <h2 class="f-t-b text-white fadeInDown animated wow" data-wow-duration="1s"><?php the_sub_field('title') ?></h2>
                                 <?php the_sub_field('content') ?>
                                 <?php if (have_rows('button')) {
-                                    while (have_rows('button')) : the_row(); ?>
+                                    while (have_rows('button')) : the_row();   
+                                        $link = get_sub_field('link');
+                                        ?>
+                        
                                         <article style="margin-bottom: 20px;">
-                                            <a href="<?php the_sub_field('link') ?>" class="text-center hvr-shutter-out-horizontal f-t-b fadeInLeft animated btn btn-lg btn_slide_home" data-wow-duration="1s"><?php the_sub_field('text_button') ?></a>
+                                            <a href="<?= $link['url'] ?>" target="<?= $link['target'] ?>" class="text-center hvr-shutter-out-horizontal f-t-b fadeInLeft animated btn btn-lg btn_slide_home" data-wow-duration="1s"><?php the_sub_field('text_button') ?></a>
                                         </article>
 
                                     <?php

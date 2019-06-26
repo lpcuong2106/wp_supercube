@@ -24,21 +24,24 @@
                 };
                 // loop through the rows of data
                 $id = 0;
-                while (have_rows('button_bottom')) : the_row(); ?>
+                while (have_rows('button_bottom')) : the_row(); 
+                $link = get_sub_field('href'); 
+                $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
 
-                    <div class="col-md-<?= $colum ?> bottom_service_ft  hvr-shutter-out-horizontal f-w-600 text-center" style="background: <?php the_sub_field('background') ?>">
-                        <a class="f-t-b" href="<?php the_sub_field('href'); ?>" id="block-service-<?= $id ?>"><?php the_sub_field('content'); ?></a>
-                    </div>
-                    <style>
-                        #button-room .row .bottom_service_ft:hover a#block-service-<?= $id ?> {
-                            color: <?php the_sub_field('background');
-                                    ?> !important;
-                        }
-                    </style>
-                    <?php $id++; ?>
-                <?php
+                <div class="col-md-<?= $colum ?> bottom_service_ft  hvr-shutter-out-horizontal f-w-600 text-center" style="background: <?php the_sub_field('background') ?>">
+                    <a class="f-t-b" target="<?= $link_target; ?>" href="<?= $link['url']; ?>" id="block-service-<?= $id ?>"><?php the_sub_field('content'); ?></a>
+                </div>
+                <style>
+                    #button-room .row .bottom_service_ft:hover a#block-service-<?= $id ?> {
+                        color: <?php the_sub_field('background');
+                                ?> !important;
+                    }
+                </style>
+                <?php $id++; ?>
+            <?php
 
-            endwhile;
+        endwhile;
 
         else :
 

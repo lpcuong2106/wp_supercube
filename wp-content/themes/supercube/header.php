@@ -17,19 +17,19 @@
                 <ul>
                     <li>
                         
-                        <a href="<?php the_permalink($opt_theme['page_lg_united']) ?>" <?php if(!is_page(get_the_title($opt_theme['page_lg_chinese'])) && !is_page(get_the_title($opt_theme['page_lg_spa'])) &&!is_page(get_the_title($opt_theme['page_lg_kor'])) && !is_page(get_the_title($opt_theme['page_lg_jap']))){ echo 'class="active"'; }?>><img src="<?= get_theme_file_uri() ?>/images/united-kingdom.png" alt=""></a>
+                        <a href="<?php the_permalink($opt_theme['page_lg_united']) ?>" <?php if(!is_page(get_the_title($opt_theme['page_lg_chinese'])) && !is_page(get_the_title($opt_theme['page_lg_spa'])) &&!is_page(get_the_title($opt_theme['page_lg_kor'])) && !is_page(get_the_title($opt_theme['page_lg_jap']))){ echo 'class="active"'; }?>><img width='20' height='20' src="<?= get_theme_file_uri() ?>/images/united_1.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="<?php the_permalink($opt_theme['page_lg_spa']) ?>" <?php if(is_page(get_the_title($opt_theme['page_lg_spa']))){ echo 'class="active"'; }?>><img src="<?= get_theme_file_uri() ?>/images/spain.png" alt=""></a>
+                        <a href="<?php the_permalink($opt_theme['page_lg_spa']) ?>" <?php if(is_page(get_the_title($opt_theme['page_lg_spa']))){ echo 'class="active"'; }?>><img width='20' height='20' src="<?= get_theme_file_uri() ?>/images/spain_1.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="<?php the_permalink($opt_theme['page_lg_kor']) ?>" <?php if(is_page(get_the_title($opt_theme['page_lg_kor']))){ echo 'class="active"'; }?>><img src="<?= get_theme_file_uri() ?>/images/korea.png" alt=""></a>
+                        <a href="<?php the_permalink($opt_theme['page_lg_kor']) ?>" <?php if(is_page(get_the_title($opt_theme['page_lg_kor']))){ echo 'class="active"'; }?>><img  width='20' height='20' src="<?= get_theme_file_uri() ?>/images/korea_1.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="<?php the_permalink($opt_theme['page_lg_jap']) ?>" <?php if(is_page(get_the_title($opt_theme['page_lg_jap']))){ echo 'class="active"'; }?>><img src="<?= get_theme_file_uri() ?>/images/japan.png" alt=""></a>
+                        <a href="<?php the_permalink($opt_theme['page_lg_jap']) ?>" <?php if(is_page(get_the_title($opt_theme['page_lg_jap']))){ echo 'class="active"'; }?>><img   width='20' height='20'  src="<?= get_theme_file_uri() ?>/images/japan_1.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="<?php the_permalink($opt_theme['page_lg_chinese']) ?>" <?php if(is_page(get_the_title($opt_theme['page_lg_chinese']))){ echo 'class="active"'; }?>><img src="<?= get_theme_file_uri() ?>/images/china.png" alt=""></a>
+                        <a href="<?php the_permalink($opt_theme['page_lg_chinese']) ?>" <?php if(is_page(get_the_title($opt_theme['page_lg_chinese']))){ echo 'class="active"'; }?>><img  width='20' height='20'  src="<?= get_theme_file_uri() ?>/images/china_1.png" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -84,17 +84,17 @@
                             <ul id="social-link" class="hidden-lg">
                                 <?php if ($opt_theme['facebook_social']) { ?>
                                     <li>
-                                        <a href="<?= $opt_theme['facebook_social'] ?>"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="<?= $opt_theme['facebook_social'] ?>"><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                 <?php } ?>
                                 <?php if ($opt_theme['twitter_social']) { ?>
                                     <li>
-                                        <a href="<?= $opt_theme['twitter_social'] ?>"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="<?= $opt_theme['twitter_social'] ?>"><i class="fab fa-twitter"></i></a>
                                     </li>
                                 <?php } ?>
                                 <?php if ($opt_theme['instagram_social']) { ?>
                                     <li>
-                                        <a href="<?= $opt_theme['instagram_social'] ?>"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="<?= $opt_theme['instagram_social'] ?>"><i class="fab fa-instagram"></i></a>
                                     </li>
                                 <?php } ?>
                             </ul>

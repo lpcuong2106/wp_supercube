@@ -27,7 +27,9 @@ if (!empty($block['anchor'])) {
                                 <img src="<?php the_sub_field('image')['url'] ?>" alt="">
                             </div>
                             <div class="content_image col-lg-6 col-md-12">
+                                <?php if(!empty(get_sub_field('header') )): ?>
                                 <h3 class="f-t-b"><?php the_sub_field('header') ?></h3>
+                                <?php endif; ?>
                                 <article>
                                     <?php the_sub_field('content') ?>
                                 </article>

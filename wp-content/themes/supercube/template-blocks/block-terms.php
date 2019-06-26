@@ -25,9 +25,9 @@ $term = get_field('term');
                 <div class="main col-12">
                 <?php if(!empty($content)){echo $content; } ?>
                 <?php if(have_rows('button')){
-                    while(have_rows('button')): the_row() ?>
+                    while(have_rows('button')): the_row();$link = get_sub_field('href');  ?>
                         <div class="col-12 text-center">
-                        <a href="<?php the_sub_field('href') ?>" class="btn btn-md btn_blue hvr-shutter-out-horizontal"><?php the_sub_field('text_button') ?></a>    
+                        <a href="<?= $link['url'] ?>" target="<?= $link['target'] ?>" class="btn btn-md btn_blue hvr-shutter-out-horizontal"><?php the_sub_field('text_button') ?></a>    
                         </div>
                 <?php endwhile; } ?>
                     <h3 class="terms_condition">Terms &amp; Conditions</h3>

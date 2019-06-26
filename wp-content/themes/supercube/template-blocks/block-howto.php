@@ -30,7 +30,7 @@ $header = get_field('header');
 $content = get_field('content');
 $color = get_field('background') ?: '#ffffff';
 $colorText = get_field('color') ?: '#ffffff';
-$button = get_field('button_option');
+
 //$image = get_field('image') ?: 295;
 // $background_color = get_field('background_color');
 // $text_color = get_field('text_color');
@@ -46,9 +46,9 @@ $button = get_field('button_option');
         </article>
         <?php } ?>
         <?php if (have_rows('button_option')) {
-            while (have_rows('button_option')) : the_row(); ?>
+            while (have_rows('button_option')) : the_row(); $link = get_sub_field('link'); ?>
                 <p style="margin-bottom: 20px;">
-                <a href="<?php the_sub_field('link') ?>" class="text-center hvr-shutter-out-horizontal f-t-b btn btn-lg btn_on_block"
+                <a href="<?= $link['url']; ?>" target="<?= $link['target'] ?>" class="text-center hvr-shutter-out-horizontal f-t-b btn btn-lg btn_on_block"
                    style="background: <?php the_sub_field('background') ?>; color:<?php the_sub_field('color_text') ?>"><?php the_sub_field('text_button') ?></a>
                 </p>
                   

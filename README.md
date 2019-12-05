@@ -1,5 +1,6 @@
-# supercube_proj_1
+# Info
+Type: Worpress
+Description: This is the third my project about blog wordpress. 
 
-Dự án training supercube project 1
-
-Chỉnh đường dần trong .htaccess và trong sql.
+## Trainning
+Project trainning of Coffeemugvn.com
